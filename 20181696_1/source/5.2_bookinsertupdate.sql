@@ -5,8 +5,7 @@ CREATE PROCEDURE BookInsertOrUpdate(
 	mybookname	VARCHAR(40),
  	mypublisher 	VARCHAR(40),
 	myprice		INT)
-BEGIN
-	DECLARE mycount INTEGER;
+BEGINmysql -u your_user -p madangdb < "c:\Users\xlavh\Desktop\Databases 5.1\20181696_1\5.1_insertbook.sql"
 	SELECT COUNT(*) INTO mycount FROM Book
 		WHERE bookname LIKE mybookname;
 IF mycount!=0 THEN
